@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+.glow-effect {
+  animation: coin-glow 3s infinite;
+}
+
+@keyframes coin-glow {
+  0% {
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(250, 204, 21, 0.7), 0 0 60px rgba(234, 179, 8, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.5);
+  }
+}
